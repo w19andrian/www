@@ -1,0 +1,66 @@
+baseurl = "http://www.wmpandrian.dev"
+title = "wmpandrian"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+
+[pagination]
+pagerSize = 20
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Wemphi Andrian"
+  info = "Platform Engineer"
+  description = "A vessel of whatever is in my head."
+  keywords = "blog,platform,engineer,bake,world,music,personal"
+#  avatarurl = "images/avatar.png"
+  logourl = "images/logo.png"
+  logodarkurl = "images/logo.dark.svg"
+  logolighturl = "images/logo.light.svg"
+  #gravatar = "john.doe@example.com"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2026
+
+  enableTwemoji = true
+
+  colorScheme = "light"
+  hidecolorschemetoggle = true
+
+  customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/w19andrian/"
+[[params.social]]
+  name = "Linkedin"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/wemphiandrian/"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
