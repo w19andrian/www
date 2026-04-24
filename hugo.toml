@@ -1,6 +1,6 @@
 baseurl = "http://www.wmpandrian.dev"
 title = "wmpandrian"
-theme = "hugo-coder"
+theme = ""
 languagecode = "en"
 defaultcontentlanguage = "en"
 
@@ -57,10 +57,14 @@ style = "github-dark"
 
 # Menu links
 [[menu.main]]
-  name = "Blog"
+  name = "Home"
   weight = 1
+  url  = "/"
+[[menu.main]]
+  name = "Blog"
+  weight = 2
   url  = "posts/"
 [[menu.main]]
   name = "About"
-  weight = 2
+  weight = 3
   url = "about/"

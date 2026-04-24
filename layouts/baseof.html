@@ -1,0 +1,22 @@
+<html>
+
+<head>
+	{{ partial "head.html" . }}
+	<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+</head>
+
+<body>
+	<header role="banner">
+		{{ partial "header.html" . }}
+	</header>
+	<main class="main-content">
+		<div class="content">
+			{{ block "content" . }}{{ end }}
+		</div>
+	</main>
+	<footer class="footer">
+		{{ partial "footer.html" . }}
+	</footer>
+</body>
+
+</html>
