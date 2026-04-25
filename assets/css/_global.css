@@ -1,0 +1,44 @@
+:root {
+	--color-bg-page: #fff;
+	--color-txt-primary: #000;
+
+	--color-bg: #fff;
+	--color-fg: black;
+	--color-border: black;
+
+	--font-sans: roboto, sans-serif;
+	--font-mono: monospace;
+	--font-family-text: "Roboto", sans-serif;
+	--font-family-code: "JetBrains Mono", monospace;
+
+	--font-line-content: 1.75;
+	--font-line-normal: 1.5;
+	--font-line-header: 1.25;
+	--font-line-ui: 1;
+	--font-size-largest: 2.5rem;
+	--font-size-larger: 2rem;
+	--font-size-large: 1.5rem;
+	--font-size-medium: 1.25rem;
+	--font-size-normal: 1rem;
+	--font-size-small: 0.8rem;
+	--font-weight-bold: 600;
+	--font-weight-normal: 400;
+
+	--nav-container-height: 3rem;
+	--nav-item-width: 9rem;
+
+	--z-index-sticky-header: 100;
+	--layout-side-padding-min: 1rem;
+	--layout-side-padding: max(var(--layout-side-padding-min), calc(50vw - 1000px + 1rem));
+	--layout-full-width: calc(100vw - var(--layout-side-padding)*2);
+	--layout-sidebar-min: 15rem;
+	--layout-sidebar-gap: 2rem;
+	--layout-sidebar-padding: 1rem;
+	--layout-content-min: 31rem;
+	--layout-content-max: 48rem;
+	--layout-2-sidebars: [full-start left-sidebar-start] minmax(var(--layout-sidebar-min), 1fr) [left-sidebar-end] var(--layout-sidebar-gap) [content-start] minmax(0, var(--layout-content-max)) [content-end] var(--layout-sidebar-gap) [right-sidebar-start] minmax(var(--layout-sidebar-min), 1fr) [full-end right-sidebar-end];
+	--layout-1-sidebar-left: [full-start sidebar-start left-sidebar-start] minmax(var(--layout-sidebar-min), 1fr) [sidebar-end left-sidebar-end] var(--layout-sidebar-gap) [content-start] minmax(0, var(--layout-content-max)) [full-end content-end] minmax(0, 1fr);
+	--layout-1-sidebar-right: minmax(0, 1fr) [full-start content-start] minmax(0, var(--layout-content-max)) [content-end] var(--layout-sidebar-gap) [sidebar-start right-sidebar-start] minmax(var(--layout-sidebar-min), 1fr) [full-end sidebar-end right-sidebar-end];
+	--layout-no-sidebar: [full-start] 1fr [content-start] minmax(0, var(--layout-content-max)) [content-end] 1fr [full-end];
+	--layout-no-sidebar-extended: [extended-full-start] var(--layout-side-padding) [full-start] 1fr [content-start] minmax(0, var(--layout-content-max)) [content-end] 1fr [full-end] var(--layout-side-padding) [extended-full-end];
+}

@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: var(--font-family-text);
+	font-weight: var(--font-weight-normal);
+	background-color: var(--color-bg-page);
+	scroll-behavior: smooth;
+
+}
+
+.page-layout {
+	display: grid;
+	color: var(--color-fg);
+	min-height: 100svh;
+	margin: 0;
+	grid-template-columns: minmax(0, 1fr);
+	grid-template-rows: min-content 1fr min-content;
+}
+
+.page-layout--header {
+	position: sticky;
+	top: 0;
+	z-index: var(--z-index-sticky-header);
+}
+
+
+.page-layout--footer {
+	width: 100%;
+	text-align: center;
+	font-size: .8rem;
+	line-height: 2rem;
+	background-color: var(--color-bg-page);
+}
+
+.c-footer {
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.container {
+	display: flex;
+	max-width: 100rem;
+	width: 100%;
+}
