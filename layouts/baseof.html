@@ -9,10 +9,8 @@
 	<header role="banner">
 		{{ partial "header.html" . }}
 	</header>
-	<main class="main-content">
-		<div class="content">
-			{{ block "content" . }}{{ end }}
-		</div>
+	<main class="wrapper">
+		{{ block "content" . }}{{ end }}
 	</main>
 	<footer class="footer">
 		{{ partial "footer.html" . }}

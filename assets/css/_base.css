@@ -10,7 +10,7 @@ html {
 }
 
 :root {
-	--color-bg: white;
+	--color-bg: #e3dcd7;
 	--color-fg: black;
 	--color-border: black;
 
@@ -22,22 +22,9 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 100;
-	background: var(--color-bg);
-	border-style: solid;
-	border-width: thin;
-	text-transform: uppercase;
 	font-size: 1.4rem;
-	height: 3rem;
-}
-
-a {
-	text-decoration: none;
-	color: var(--color-fg);
-
-	&:focus,
-	&:hover {
-		text-decoration: underline;
-	}
+	height: 6rem;
+	background-color: var(--color-bg);
 }
 
 body {
@@ -47,7 +34,8 @@ body {
 	font-size: 1.8em;
 	font-weight: 400;
 	line-height: 1.8em;
-	background: var(--color-bg);
+	background-image: radial-gradient(#918F90 1.1px, #E7E3E4 0);
+	background-size: 6px 6px;
 	color: var(--color-fg);
 	padding: 0;
 	margin: 0;
@@ -60,13 +48,45 @@ footer {
 	text-align: center;
 	font-size: 1.6rem;
 	line-height: 2rem;
-	margin-bottom: 1rem;
+	background-color: var(--color-bg);
 }
 
-.main-content {
+.c-footer {
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.wrapper {
 	flex: 1;
 	display: flex;
-	max-width: 90rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	max-width: 100rem;
 	width: 100%;
-	margin-bottom: 3rem;
+	background-color: var(--color-bg);
+
+}
+
+.centered {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+
+	.home {
+		ul {
+			display: inline-flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0.5rem;
+			}
+		}
+	}
 }
