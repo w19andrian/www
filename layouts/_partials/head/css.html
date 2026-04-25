@@ -1,4 +1,7 @@
 {{ with resources.Get "css/main.css" | css.Build }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 {{ if hugo.IsDevelopment }}
 <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{ else }}

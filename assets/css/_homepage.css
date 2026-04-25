@@ -1,0 +1,57 @@
+.homepage {
+	display: grid;
+	height: 100%;
+	grid-template-rows: min-content min-content min-content;
+	grid-template-areas:
+		"header"
+		"body"
+		"footer";
+	justify-content: center;
+	align-content: center;
+
+	h1,
+	h2 {
+		margin: 0;
+	}
+}
+
+.homepage--header {
+	grid-area: header;
+	display: flex;
+	justify-content: center;
+	margin: 0.5rem;
+}
+
+.homepage-author {
+	font-size: 1.5rem;
+
+}
+
+.homepage-author h1 {
+	font-size: 2.5rem;
+	margin-top: 0;
+}
+
+.homepage--body {
+	grid-area: body;
+	display: flex;
+	justify-content: center;
+	margin: 0.5rem;
+}
+
+.homepage--footer {
+	grid-area: footer;
+	display: flex;
+	justify-content: center;
+}
+
+.list--socials {
+	display: inline-flex;
+	list-style: none;
+	padding: 0;
+}
+
+.item--socials {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
